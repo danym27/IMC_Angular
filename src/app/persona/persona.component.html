@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  PERSONA COMPONENT
+  <form *ngIf="persona">
+    <label for='nombre'>NOMBRE</label>
+    <input id='nombre' type='text' [(ngModel)]="persona.nombre" name="nombre">
+    <label for='altura'>ALTURA</label>
+    <input id='altura' type='number' [(ngModel)]="persona.altura" name="altura">
+    <label for='peso'>PESO</label>
+    <input id='peso' type='number' [(ngModel)]="persona.peso" name="peso">
+    <button (click)='mostrarPersona(persona)'>Mostrar Persona</button>
+  </form>
+  <imc-persona [peso]="persona.peso" [altura]="persona.altura" ></imc-persona>
+</div>
+
+<div style="text-align:center" [hidden]="esVisible()">
+  NO EXISTE PERSONA
+</div>
