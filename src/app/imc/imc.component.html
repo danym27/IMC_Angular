@@ -1,5 +1,8 @@
 <div style= 'text-align:center'>
   IMC
 </div>
-<label for="imc">IMC</label>
+<label>IMC</label>
 <input type="text" [value]="imc"/>
+<br/>
+<label>Tipo IMC</label>
+<input type="text" [value]="tipoIMC | imcpipe" />

@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PersonaComponent } from './persona/persona.component';
 import { ImcComponent } from './imc/imc.component';
+import { ImcPipe } from './imc/imc.pipe';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { ImcComponent } from './imc/imc.component';
     AppComponent,
     PersonaComponent,
     ImcComponent,
+    ImcPipe,
   ],
   imports: [
     BrowserModule,
